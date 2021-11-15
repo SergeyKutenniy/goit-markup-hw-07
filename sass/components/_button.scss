@@ -1,25 +1,25 @@
 .button-primary {
+  display: inline-block;
+  align-items: center;
+  text-align: center;
   color: #fff;
   background-color: var(--accent-color);
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
-  font-family: inherit;
+  border: 0px;
   border-radius: 4px;
   padding: 10px 32px;
-  display: inline-block;
   min-width: 200px;
   height: 50px;
-  border: 0px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.button-primary:hover,
-.button-primary:focus {
-  background-color: #188ce8;
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
 }
 
 .project-filter {
@@ -43,14 +43,14 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.button-filter:hover,
-.button-filter:focus {
-  color: #fff;
-  background-color: var(--accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  &:hover,
+  &:focus {
+    color: #fff;
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
 }
 
 .button-primary.button-subscribe {
@@ -71,8 +71,7 @@
 
 .btn-filter {
   margin-right: 8px;
-}
-
-.btn-filter:nth-child(5n) {
-  margin-right: 0;
+  &:nth-child(5n) {
+    margin-right: 0;
+  }
 }
